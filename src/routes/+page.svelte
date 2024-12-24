@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import TuttoCard from '$lib/components/TuttoCard.svelte';
+</script>
+
+<main>
+    <TuttoCard />
+</main>
+
+<style>
+    main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f0f0f0;
+    }
+</style>
