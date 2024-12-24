@@ -1,0 +1,10 @@
+services:
+  sveltekit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "44322:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
